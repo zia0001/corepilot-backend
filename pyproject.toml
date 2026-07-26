@@ -1,0 +1,9 @@
+[project]
+name = "corepilot-backend"
+version = "0.1.0"
+description = "Production-grade AI workspace backend."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Zia Ud din" }
+]
