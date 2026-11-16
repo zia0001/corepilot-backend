@@ -1,6 +1,5 @@
 from fastapi import FastAPI
-
-
+from app.api.health import router as health_router
 
 
 
@@ -9,9 +8,5 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-
-@app.get("/health")
-async def check_health():
-    return {"status": "ok"}
-
-
+#Method that connects an APIRouter's endpoints to the main FastAPI app
+app.include_router(health_router)
